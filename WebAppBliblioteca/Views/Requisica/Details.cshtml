@@ -1,0 +1,50 @@
+﻿@model WebAppBliblioteca.Models.Requisicao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Requisicao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Livro.Isbn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Livro.Isbn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataRequisicao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataRequisicao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEntrada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEntrada)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RequisicaoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
